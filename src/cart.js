@@ -48,7 +48,7 @@ export default function Cart(props) {
                                             style={{ backgroundColor: 'grey', color: 'white', borderRadius: '5px', padding: '0.5rem', margin: "5px" }}
                                             size="small"
                                             variant="outlined"
-                                            onClick={() => props.addGame(game)}
+                                            onClick={() => props.addGame(game, index)}
                                         >
                                             +
                                         </IconButton>
@@ -59,7 +59,7 @@ export default function Cart(props) {
                                             style={{ backgroundColor: 'grey', color: 'white', borderRadius: '5px', padding: '0.5rem' }}
                                             size="small"
                                             variant="outlined"
-                                            onClick={() => props.removeGame(game)}
+                                            onClick={() => props.removeGame(game, index)}
                                         >
                                             -
                                         </IconButton>
